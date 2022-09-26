@@ -1,0 +1,20 @@
+public class EXERCICIO4 {
+    public static void main(String[] args) {
+        double A=80000, bB=200000;
+        int ano=1;
+        System.out.println("ANO -> "+ano);
+        System.out.println("Populacao A -> "+A);
+        System.out.println("Populacao B -> "+B);
+        System.out.println("");
+        do{
+            A = A + (A*0.03);
+            B = B + (B*0.015);
+            ano = ano+1;
+            System.out.println("ANO -> "+ano);
+            System.out.println("Populacao A -> "+A);
+            System.out.println("Populacao B -> "+B);
+            System.out.println("");
+        }while(A < B);
+
+    }
+}
