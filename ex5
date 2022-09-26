@@ -1,0 +1,52 @@
+import java.util.Scanner;
+
+public class EXERCICIO5 {
+   
+    public static void main(String[] args) {
+        double A, B, tA, tB;
+        int ano=1, rep=0, cont=0;
+        Scanner scanner = new Scanner(System.in);
+
+do {
+    System.out.print("Informe a populacao do pais A: ");
+    A = scanner.nextDouble();
+    System.out.print("Informe a taxa de crecimento do pais A: ");
+    tA = scanner.nextDouble();
+    System.out.print("Informe a populacao do pais B: ");
+    B = scanner.nextDouble();
+    System.out.print("Informe a taxa de crecimento do pais B: ");
+    tB = scanner.nextDouble();
+    tA = tA / 100;
+    tB = tB / 100;
+    System.out.println("");
+    System.out.println("ANO -> " + ano);
+    System.out.println("Populacao do pais A -> " + popA);
+    System.out.println("Populacao do pais B -> " + popB);
+    System.out.println("");
+    if(pA<B) {
+        do {
+            A = A + (A * tA);
+            B = B + (B * tB);
+            ano = ano + 1;
+            System.out.println("ANO -> " + ano);
+            System.out.println("Populacao do pais A -> " + popA);
+            System.out.println("Populacao do pais B -> " + popB);
+            System.out.println("");
+        } while (A <= B);
+    }
+    else{
+        do {
+            A = A + (A * tA);
+            B = B + (B * tB);
+            ano = ano + 1;
+            System.out.println("ANO -> " + ano);
+            System.out.println("Populacao do pais A -> " + popA);
+            System.out.println("Populacao do pais B -> " + popB);
+            System.out.println("");
+        } while (B <= A);
+    }
+    System.out.println("Digite 1 para repetir a operacao ou outro numero para sair ");
+    rep = scanner.nextInt();
+}while (rep==1);
+    }
+}
