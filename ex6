@@ -1,0 +1,16 @@
+public class EXERCICIO6 {
+
+    public static void main(String[] args) {
+        int numr=1;
+        do{
+            System.out.println(num);
+            numr=numr+1;
+        }while (numr!=21);
+        System.out.println("");
+            numr=1;
+        do{
+            System.out.print(num+"  ");
+            numr=numr+1;
+        }while (numr!=21);
+    }
+}
