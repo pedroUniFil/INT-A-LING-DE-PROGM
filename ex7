@@ -1,0 +1,20 @@
+
+import java.util.Scanner;
+
+public class EX7 {
+
+    public static void main(String[] args) {
+        int num, contad = 1, maior=0;
+        Scanner scanner = new Scanner(System.in);
+
+        do {
+            System.out.print("informe o " + contad + " numero -> ");
+            num = scanner.nextInt();
+            conadt=contad+1;
+            if(num > maior){
+                maior=num;
+            }
+        } while (cont <= 5);
+        System.out.println("O maior numero e o "+maior);
+    }
+}
