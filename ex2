@@ -1,0 +1,22 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class EXERCICIO2 {
+    public static void main(String[] args) {
+        int[] numer = new int[5];
+        int soma=0;
+        Scanner scanner = new Scanner(System.in);
+           for (int i = 0; i < numer.length; i++) {
+            System.out.println("Digite o numero: "+ (i+1) + "  ");
+            numer[i] = (scanner.nextInt());
+            soma = soma +numer[i];
+        }
+            for (int j = 0; j < numer.length; j++){
+            System.out.println(numer[j]+ "  ");
+        }
+  Arrays.sort(numer);
+  System.out.println("menor "+numer[0]);
+  System.out.println("maior "+numer[4]);
+  System.out.println("media: "+(soma/5));
+    }
+}
